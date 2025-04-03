@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardapio</title>
+    <link rel="stylesheet" href="/pasta_cardapio/cardapio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Pizzaria VVC</h1>
+        </div>
+        <nav role="navigation">
+            <ul>
+                <li><a href="carrinho">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sabores_pizzas">
+        <h2>Nosso cardápio de pizzas</h2>
+        <article>
+            <h3>Pizza Mista </h3> 
+            <p>Molho de tomate, mussarela, presunto.</p> 
+            <img src="" alt="imagem"> 
+            <h4><span class="preco">R$ 29,00 </span></h4>                     
+        </article>
+        
+        <hr>
+        
+        <article>
+            <h3>Pizza Calabresa </h3>
+            <p>Molho de tomate, mussarela, calabresa, cebola.</p>
+            <img src="" alt="imagem"> 
+            <h4><span class="preco">R$ 29,00 </span></h4>            
+        </article>
+        
+        <hr>
+        
+        <article>
+            <h3>Pizza Frango R$: </h3>
+            <p>Molho de tomate, mussarela, frango.</p>
+            <img src="" alt="imagem"> 
+            <h4><span class="preco">R$ 29,00 </span></h4>            
+        </article>
+        
+        <hr>
+
+        <article>
+            <h3>Pizza Marguerita </h3>
+            <p>Molho de tomate, mussarela, manjericão fresco.</p>
+            <img src="" alt="imagem">  
+            <h4><span class="preco">R$: 32,99 </span></h4>          
+        </article>
+
+        <hr>
+
+        <article>
+            <h3>Pizza Cala-bacon </h3>
+            <p>Molho de tomate, mussarela, calabresa, bacon.</p>
+            <img src="" alt="imagem">
+            <h4><span class="preco">R$: 32,99 </span></h4>              
+        </article>
+
+        <hr>
+
+        <article>
+            <h3>Pizza Frango + Catupiry  </h3>
+            <p>Molho de tomate, mussarela, frango, catupiry.</p>
+            <img src="" alt="imagem"> 
+            <h4><span class="preco">R$: 32,99 </span></h4>             
+        </article>
+    </section>
+
+    <hr>
+
+    <section class="adicionais">
+        <h2>Adicionais</h2>
+        <article>
+            <h3>Borda recheada <span class="preco">R$ 5,00 </span></h3>
+        </article>
+    </section>
+
+        <hr>
+
+    <section class="bebidas">
+        <h2>Bebidas</h2>
+        <article>
+            <h3>Coca-Cola 1L: <span class="preco">R$ 8,00 </span></h3>
+        </article>  
+
+        <article>
+            <h3>Coca-Cola Zero 1L: <span class="preco">R$ 8,00</span></h3>
+        </article>  
+        
+        <article>
+            <h3>Guaraná 1L: <span class="preco">R$ 7,00</span></h3>
+        </article>  
+
+        <article>
+            <h3>Pepsi 1L: <span class="preco">R$ 7,00</span></h3>
+        </article>  
+
+        <article>
+            <h3>Coca-Cola 350ml: <span class="preco">R$ 5,00</span></h3>
+        </article>   
+        
+        <article>
+            <h3>Guaraná 350ml: <span class="preco">R$ 4,00</span></h3>
+        </article>  
+
+        <article>
+            <h3>Pepsi 350ml: R$ <span class="preco">R$ 4,00</span></h3>
+        </article>  
+
+        <article>
+            <h3>Sukita 350ml: <span class="preco">R$ 4,00</span></h3>
+        </article>    
+    </section>
+
+    <hr>
+
+    <h2>Faça seu Pedido</h2>
+
+    <form action="processar_pedido.php" method="POST">
+        <!-- Escolha do primeiro sabor -->
+        <label for="sabor1">Escolha o primeiro sabor:</label>
+        <select id="sabor1" name="sabor1" required>
+            <option value="mista">Pizza Mista</option>
+            <option value="calabresa">Pizza Calabresa</option>
+            <option value="frango">Pizza Frango</option>
+            <option value="marguerita">Pizza Marguerita</option>
+            <option value="cala-bacon">Pizza Cala-bacon</option>
+            <option value="frango-catupiry">Pizza Frango com Catupiry</option>
+        </select>
+
+        <br><br>
+
+        <!-- Escolha do segundo sabor -->
+        <label for="sabor2">Escolha o segundo sabor:</label>
+        <select id="sabor2" name="sabor2" required>
+            <option value="mista">Pizza Mista</option>
+            <option value="calabresa">Pizza Calabresa</option>
+            <option value="frango">Pizza Frango</option>
+            <option value="marguerita">Pizza Marguerita</option>
+            <option value="cala-bacon">Pizza Cala-bacon</option>
+            <option value="frango-catupiry">Pizza Frango com Catupiry</option>
+        </select>
+
+        <br><br>
+
+        <!-- Opção de borda recheada -->
+        <label>
+            <input type="checkbox" name="borda" value="sim">
+            Adicionar borda recheada (+ R$ 5,00)
+        </label>
+
+        <br><br>
+
+        <!-- Escolha de bebidas -->
+        <label for="bebida">Escolha sua bebida:</label>
+        <select id="bebida" name="bebida">
+            <option value="nenhuma">Nenhuma</option>
+            <option value="coca-1l">Coca-Cola 1L</option>
+            <option value="coca-zero-1l">Coca-Cola Zero 1L</option>
+            <option value="guarana-1l">Guaraná 1L</option>
+            <option value="pepsi-1l">Pepsi 1L</option>
+            <option value="coca-350ml">Coca-Cola 350ml</option>
+            <option value="coca-zero-350ml">Coca-Cola Zero 350ml</option>
+            <option value="guarana-350ml">Guaraná 350ml</option>
+            <option value="pepsi-350ml">Pepsi 350ml</option>
+            <option value="sukita-350ml">Sukita 350ml</option>
+        </select>
+
+        <br><br>
+
+        <!-- Nome do cliente -->
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <br><br>
+
+        <!-- Número do apartamento -->
+        <label for="bloco">Número do Bloco:</label>
+        <input type="text" id="bloco" name="bloco" required>
+
+        <br><br>
+
+        <label for="apartamento">Número do apartamento:</label>
+        <input type="text" id="apartamento" name="apartamento" required>
+
+        <!--botão para continuar comprando-->
+        <button type="button" onclick="continuarComprando()">Continuar Comprando</button>
+
+        <!-- Botão para enviar pedido -->
+        <button type="submit">Finalizar Pedido</button>
+    </form>
+</body>
+</html>

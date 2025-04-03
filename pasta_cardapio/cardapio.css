@@ -1,0 +1,12 @@
+.preco {
+    color: rgba(240, 132, 8, 0.986);
+    font-weight: bold;
+    
+}
+
+.sabores_pizzas {
+    font-family: Comfortaa ;
+}
+.sabores_pizzas p {
+    font-style: italic ;
+}
