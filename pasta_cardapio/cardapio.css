@@ -1,12 +1,56 @@
-.preco {
-    color: rgba(240, 132, 8, 0.986);
-    font-weight: bold;
-    
+*{
+    padding: 0 auto;
+    box-sizing: border-box;
 }
 
-.sabores_pizzas {
-    font-family: Comfortaa ;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
 }
-.sabores_pizzas p {
-    font-style: italic ;
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 80px; /* espaço para o header fixo */
+    max-width: 1200px; /* você pode ajustar esse valor */
+}
+
+section {
+    margin-top: 90px;
+    scroll-margin-top: 100px;
 }

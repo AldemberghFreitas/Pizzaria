@@ -11,17 +11,19 @@
 </head>
 <body>
     <header>
-        <div>
-            <h1>Pizzaria VVC</h1>
-        </div>
-        <nav role="navigation">
-            <ul>
-                <li><a href="carrinho">Carrinho</a></li>
-            </ul>
+        <h1 class="logo">Pizzaria VVC</h1>
+        <nav class="navbar" role="navigation">
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#sabores_pizzas">Pizzas</a></li>
+                    <li><a href="#bebidas">Bebidas</a></li>
+                    <li><a href="carrinho">Carrinho</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section class="sabores_pizzas">
+    <section id="sabores_pizzas">
         <h2>Nosso cardápio de pizzas</h2>
         <article>
             <h3>Pizza Mista </h3> 
@@ -87,7 +89,7 @@
 
         <hr>
 
-    <section class="bebidas">
+    <section id="bebidas">
         <h2>Bebidas</h2>
         <article>
             <h3>Coca-Cola 1L: <span class="preco">R$ 8,00 </span></h3>
