@@ -17,7 +17,7 @@
                 <ul class="nav-links">
                     <li><a href="#sabores_pizzas">Pizzas</a></li>
                     <li><a href="#bebidas">Bebidas</a></li>
-                    <li><a href="carrinho">Carrinho</a></li>
+                    <li><a href="/pasta_carrinho/carrinho.html">Carrinho</a></li>
                 </ul>
             </div>
         </nav>
@@ -126,80 +126,66 @@
 
     <hr>
 
-    <h2>Faça seu Pedido</h2>
+    <form action="">
+        <h2>Faça seu Pedido</h2>
+        <form action="processar_pedido.php" method="POST">
+            <!-- Escolha do primeiro sabor -->
+            <label for="sabor1">Escolha o primeiro sabor:</label>
+            <select id="sabor1" name="sabor1" required>
+                <option value="mista">Pizza Mista</option>
+                <option value="calabresa">Pizza Calabresa</option>
+                <option value="frango">Pizza Frango</option>
+                <option value="marguerita">Pizza Marguerita</option>
+                <option value="cala-bacon">Pizza Cala-bacon</option>
+                <option value="frango-catupiry">Pizza Frango com Catupiry</option>
+            </select>
+            <br><br>
+            <!-- Escolha do segundo sabor -->
+            <label for="sabor2">Escolha o segundo sabor:</label>
+            <select id="sabor2" name="sabor2" required>
+                <option value="mista">Pizza Mista</option>
+                <option value="calabresa">Pizza Calabresa</option>
+                <option value="frango">Pizza Frango</option>
+                <option value="marguerita">Pizza Marguerita</option>
+                <option value="cala-bacon">Pizza Cala-bacon</option>
+                <option value="frango-catupiry">Pizza Frango com Catupiry</option>
+            </select>
+            <br><br>
+            <!-- Opção de borda recheada -->
+            <label>
+                <input type="Checkbox" name="bordaCheckbox" id="bordaCheckbox">
+                Adicionar borda recheada (+ R$ 5,00)
+                <select name="borda" id="bordaSelect" disabled>
+                    <option value="Catupiry">Catupiry</option>
+                    <option value="Cheedar">Cheedar</option>
+                </select>
+            </label>
+            <br><br>
+            <!-- Escolha de bebidas -->
+            <label for="bebida">Escolha sua bebida:</label>
+            <select id="bebida" name="bebida">
+                <option value="nenhuma">Nenhuma</option>
+                <option value="coca-1l">Coca-Cola 1L</option>
+                <option value="coca-zero-1l">Coca-Cola Zero 1L</option>
+                <option value="guarana-1l">Guaraná 1L</option>
+                <option value="pepsi-1l">Pepsi 1L</option>
+                <option value="coca-350ml">Coca-Cola 350ml</option>
+                <option value="coca-zero-350ml">Coca-Cola Zero 350ml</option>
+                <option value="guarana-350ml">Guaraná 350ml</option>
+                <option value="pepsi-350ml">Pepsi 350ml</option>
+                <option value="sukita-350ml">Sukita 350ml</option>
+            </select>
 
-    <form action="processar_pedido.php" method="POST">
-        <!-- Escolha do primeiro sabor -->
-        <label for="sabor1">Escolha o primeiro sabor:</label>
-        <select id="sabor1" name="sabor1" required>
-            <option value="mista">Pizza Mista</option>
-            <option value="calabresa">Pizza Calabresa</option>
-            <option value="frango">Pizza Frango</option>
-            <option value="marguerita">Pizza Marguerita</option>
-            <option value="cala-bacon">Pizza Cala-bacon</option>
-            <option value="frango-catupiry">Pizza Frango com Catupiry</option>
-        </select>
-
-        <br><br>
-
-        <!-- Escolha do segundo sabor -->
-        <label for="sabor2">Escolha o segundo sabor:</label>
-        <select id="sabor2" name="sabor2" required>
-            <option value="mista">Pizza Mista</option>
-            <option value="calabresa">Pizza Calabresa</option>
-            <option value="frango">Pizza Frango</option>
-            <option value="marguerita">Pizza Marguerita</option>
-            <option value="cala-bacon">Pizza Cala-bacon</option>
-            <option value="frango-catupiry">Pizza Frango com Catupiry</option>
-        </select>
-
-        <br><br>
-
-        <!-- Opção de borda recheada -->
-        <label>
-            <input type="checkbox" name="borda" value="sim">
-            Adicionar borda recheada (+ R$ 5,00)
-        </label>
-
-        <br><br>
-
-        <!-- Escolha de bebidas -->
-        <label for="bebida">Escolha sua bebida:</label>
-        <select id="bebida" name="bebida">
-            <option value="nenhuma">Nenhuma</option>
-            <option value="coca-1l">Coca-Cola 1L</option>
-            <option value="coca-zero-1l">Coca-Cola Zero 1L</option>
-            <option value="guarana-1l">Guaraná 1L</option>
-            <option value="pepsi-1l">Pepsi 1L</option>
-            <option value="coca-350ml">Coca-Cola 350ml</option>
-            <option value="coca-zero-350ml">Coca-Cola Zero 350ml</option>
-            <option value="guarana-350ml">Guaraná 350ml</option>
-            <option value="pepsi-350ml">Pepsi 350ml</option>
-            <option value="sukita-350ml">Sukita 350ml</option>
-        </select>
-
-        <br><br>
-
-        <!-- Nome do cliente -->
-        <label for="nome">Seu nome:</label>
-        <input type="text" id="nome" name="nome" required>
-
-        <br><br>
-
-        <!-- Número do apartamento -->
-        <label for="bloco">Número do Bloco:</label>
-        <input type="text" id="bloco" name="bloco" required>
-
-        <br><br>
-
-        <label for="apartamento">Número do apartamento:</label>
-        <input type="text" id="apartamento" name="apartamento" required>
-
-        <!--botão para continuar comprando-->
-        <button type="button" onclick="continuarComprando()">Continuar Comprando</button>
-
-        <!-- Botão para enviar pedido -->
-        <button type="submit">Finalizar Pedido</button>
+            <!--<div class="btnContinuarCompra">
+                botão para continuar comprando
+                <button type="button" onclick="continuarComprando()">Continuar Comprando</button>
+            </div>-->
+            <div class="btnFinalizarPedido">
+                <!-- Botão para enviar pedido -->
+                <button type="submit">Finalizar Pedido</button>
+            </div>
     </form>
+
+    <script src="cardapio.js"></script>
 </body>
 </html>
