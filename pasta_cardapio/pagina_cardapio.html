@@ -42,7 +42,7 @@
             <p>Molho de tomate, mussarela, calabresa, cebola.</p>
             <img src="imagens_cardapio/Calabresa.png" alt="Pizza Calabresa">
 
-            <h4><span class="preco">R$ 29,00 </span></h4>            
+            <h4>R$ <span class="preco">29.00 </span></h4>            
         </article>
         
         <hr>
@@ -52,7 +52,7 @@
             <p>Molho de tomate, mussarela, frango.</p>
             <img src="imagens_cardapio/Caipira.png">
 
-            <h4><span class="preco">R$ 29,00 </span></h4>            
+            <h4>R$ <span class="preco"> 29.00 </span></h4>            
         </article>
         
         <hr>
@@ -62,7 +62,7 @@
             <p>Molho de tomate, mussarela, manjericão fresco.</p>
             <img src="imagens_cardapio/Marguerita.png" alt="Pizza Marguerita">
 
-            <h4><span class="preco">R$: 32,99 </span></h4>          
+            <h4>R$<span class="preco"> 32.99</span></h4>          
         </article>
 
         <hr>
@@ -72,7 +72,7 @@
             <p>Molho de tomate, mussarela, calabresa, bacon.</p>
             <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&h=150" alt="Pizza Cala-Bacon">
 
-            <h4><span class="preco">R$: 32,99 </span></h4>              
+            <h4>R$<span class="preco"> 32.99 </span></h4>              
         </article>
 
         <hr>
@@ -82,7 +82,7 @@
             <p>Molho de tomate, mussarela, frango, catupiry.</p>
             <img src="imagens_cardapio/Frango-com-creamcheese.png" alt="Pizza Frango com Catupiry">
 
-            <h4><span class="preco">R$: 32,99 </span></h4>             
+            <h4>R$<span class="preco"> 32.99 </span></h4>             
         </article>
     </section>
 
@@ -91,7 +91,7 @@
     <section class="adicionais">
         <h2>Adicionais</h2>
         <article>
-            <h3>Borda recheada <span class="preco">R$ 5,00 </span></h3>
+            <h3>Borda recheada R$<span class="preco"> 5.00 </span></h3>
         </article>
     </section>
 
@@ -100,35 +100,35 @@
     <section id="bebidas">
         <h2>Bebidas</h2>
         <article>
-            <h3>Coca-Cola 1L: <span class="preco">R$ 8,00 </span></h3>
+            <h3>Coca-Cola 1L: R$<span class="preco"> 8.00 </span></h3>
         </article>  
 
         <article>
-            <h3>Coca-Cola Zero 1L: <span class="preco">R$ 8,00</span></h3>
+            <h3>Coca-Cola Zero 1L: R$<span class="preco"> 8.00</span></h3>
         </article>  
         
         <article>
-            <h3>Guaraná 1L: <span class="preco">R$ 7,00</span></h3>
+            <h3>Guaraná 1L: R$<span class="preco"> 7.00</span></h3>
         </article>  
 
         <article>
-            <h3>Pepsi 1L: <span class="preco">R$ 7,00</span></h3>
+            <h3>Pepsi 1L: R$<span class="preco"> 7.00</span></h3>
         </article>  
 
         <article>
-            <h3>Coca-Cola 350ml: <span class="preco">R$ 5,00</span></h3>
+            <h3>Coca-Cola 350ml: R$<span class="preco"> 5.00</span></h3>
         </article>   
         
         <article>
-            <h3>Guaraná 350ml: <span class="preco">R$ 4,00</span></h3>
+            <h3>Guaraná 350ml: R$<span class="preco"> 4.00</span></h3>
         </article>  
 
         <article>
-            <h3>Pepsi 350ml: <span class="preco">R$ 4,00</span></h3>
+            <h3>Pepsi 350ml: R$<span class="preco"> 4.00</span></h3>
         </article>  
 
         <article>
-            <h3>Sukita 350ml: <span class="preco">R$ 4,00</span></h3>
+            <h3>Sukita 350ml: R$<span class="preco"> 4.00</span></h3>
         </article>    
     </section>
 
@@ -139,23 +139,23 @@
 <!-- Escolha do primeiro sabor -->
 <label for="sabor1">Escolha o primeiro sabor:</label>
 <select id="sabor1" name="sabor1" required>
-    <option value="mista">Pizza Mista</option>
-    <option value="calabresa">Pizza Calabresa</option>
-    <option value="frango">Pizza Frango</option>
-    <option value="marguerita">Pizza Marguerita</option>
-    <option value="cala-bacon">Pizza Cala-bacon</option>
-    <option value="frango-catupiry">Pizza Frango com Catupiry</option>
+    <option value="mista" data-preco="29.00">Pizza Mista</option>
+    <option value="calabresa" data-preco="29.00">Pizza Calabresa</option>
+    <option value="frango" data-preco="29.00">Pizza Frango</option>
+    <option value="marguerita" data-preco="32.99">Pizza Marguerita</option>
+    <option value="cala-bacon" data-preco="32.99">Pizza Cala-bacon</option>
+    <option value="frango-catupiry" data-preco="32.99">Pizza Frango com Catupiry</option>
 </select>
 <br><br>
 <!-- Escolha do segundo sabor -->
 <label for="sabor2">Escolha o segundo sabor:</label>
 <select id="sabor2" name="sabor2" required>
-    <option value="mista">Pizza Mista</option>
-    <option value="calabresa">Pizza Calabresa</option>
-    <option value="frango">Pizza Frango</option>
-    <option value="marguerita">Pizza Marguerita</option>
-    <option value="cala-bacon">Pizza Cala-bacon</option>
-    <option value="frango-catupiry">Pizza Frango com Catupiry</option>
+    <option value="mista" data-preco="29.00">Pizza Mista</option>
+    <option value="calabresa" data-preco="29.00">Pizza Calabresa</option>
+    <option value="frango" data-preco="29.00">Pizza Frango</option>
+    <option value="marguerita" data-preco="32.99">Pizza Marguerita</option>
+    <option value="cala-bacon" data-preco="32.99">Pizza Cala-bacon</option>
+    <option value="frango-catupiry" data-preco="32.99">Pizza Frango com Catupiry</option>
 </select>
 <br><br>
 <!-- Opção de borda recheada -->
@@ -163,24 +163,23 @@
     <input type="checkbox" name="bordaCheckbox" id="bordaCheckbox">
     Adicionar borda recheada (+ R$ 5,00)
     <select name="borda" id="bordaSelect" disabled>
-        <option value="Catupiry">Catupiry</option>
-        <option value="Cheedar">Cheedar</option>
+        <option value="Catupiry" data-preco="5.00">Catupiry</option>
+        <option value="Cheedar" data-preco="5.00">Cheedar</option>
     </select>
 </label>
 <br><br>
 <!-- Escolha de bebidas -->
 <label for="bebida">Escolha sua bebida:</label>
 <select id="bebida" name="bebida">
-    <option value="nenhuma">Nenhuma</option>
-    <option value="coca-1l">Coca-Cola 1L</option>
-    <option value="coca-zero-1l">Coca-Cola Zero 1L</option>
-    <option value="guarana-1l">Guaraná 1L</option>
-    <option value="pepsi-1l">Pepsi 1L</option>
-    <option value="coca-350ml">Coca-Cola 350ml</option>
-    <option value="coca-zero-350ml">Coca-Cola Zero 350ml</option>
-    <option value="guarana-350ml">Guaraná 350ml</option>
-    <option value="pepsi-350ml">Pepsi 350ml</option>
-    <option value="sukita-350ml">Sukita 350ml</option>
+    <option value="nenhuma" data-preco="0">Nenhuma</option>
+    <option value="Coca Cola 1L" data-preco="8.00">Coca Cola 1L</option>
+    <option value="Coca Cola zero 1L" data-preco="8.00">Coca-Cola Zero 1L</option>
+    <option value="Guarana 1L" data-preco="7.00">Guaraná 1L</option>
+    <option value="Pepsi 1L" data-preco="7.00">Pepsi 1L</option>
+    <option value="Coca Cola 350ml" data-preco="5.00">Coca-Cola 350ml</option>
+    <option value="Guarana 350ml" data-preco="4.00">Guaraná 350ml</option>
+    <option value="Pepsi 350ml" data-preco="4.00">Pepsi 350ml</option>
+    <option value="Sukita 350ml" data-preco="4.00">Sukita 350ml</option>
 </select>
 
 <!--<div class="btnContinuarCompra">

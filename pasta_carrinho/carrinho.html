@@ -14,7 +14,8 @@
     <h2>Sua pizza de: <span id="saborPizza1"></span> / <span id="saborPizza2"></span></h2>
     <h2>Borda: <span id="saborBordaCarrinho"></span></h2>
     <h2>Refrigerante: <span id="saborRefriCarrinho"></span></h2>
-    <h2>Valor total: <span id="somaTotalItens"></span></h2>
+    <h2 id="valorTotal">Total: R$ 0,00</h2>
+
 <br>
     <button onclick="voltar()">Voltar ao cardápio</button>
 </main>
@@ -33,6 +34,7 @@
 
 <label for="apartamento">Número do apartamento:</label>
 <input type="text" id="apartamento" name="apartamento" required>
+<button type="submit">finalizar pedido</button>
 
 
 <script src="carrinho.js"></script>
