@@ -21,8 +21,8 @@ const precos = {
 
     'coca cola 1l': 8.00,
     'coca cola zero 1l': 8.00,
-    'guarana 1L': 7.00,
-    'pepsi 1L': 7.00,
+    'guarana 1l': 7.00,
+    'pepsi 1l': 7.00,
     'coca cola 350ml': 5.00,
     'coca cola zero 350ml': 5.00,
     'guarana 350ml': 4.00,
