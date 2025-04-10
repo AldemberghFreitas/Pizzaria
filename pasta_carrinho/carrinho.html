@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Carrinho</title>
-    <link rel="stylesheet" href="/pasta_carrinho/carrinho.css">
+    <link rel="stylesheet" href="/pasta_carrinho/carinho.css">
 </head>
 <body>
 <header>
@@ -17,23 +17,27 @@
     <h2 id="valorTotal">Total: R$ 0,00</h2>
 
 <br>
-    <button onclick="voltar()">Voltar ao cardápio</button>
 </main>
 
 <!-- Nome do cliente -->
-<label for="nome">Seu nome:</label>
-<input type="text" id="nome" name="nome" required>
+<form class="dadosPessoais">
+    <fieldset>Inserir dados cliente</fieldset>
+    <label for="nome">Seu nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    
+    <br><br>
+    
+    <!-- Número do apartamento -->
+    <label for="bloco">Número do Bloco:</label>
+    <input type="text" id="bloco" name="bloco" required>
+    
+    <br><br>
+    
+    <label for="apartamento">Número do apartamento:</label>
+    <input type="text" id="apartamento" name="apartamento" required>
+</form>
+<button onclick="voltar()">Voltar ao cardápio</button>
 
-<br><br>
-
-<!-- Número do apartamento -->
-<label for="bloco">Número do Bloco:</label>
-<input type="text" id="bloco" name="bloco" required>
-
-<br><br>
-
-<label for="apartamento">Número do apartamento:</label>
-<input type="text" id="apartamento" name="apartamento" required>
 <button type="submit">finalizar pedido</button>
 
 
